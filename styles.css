@@ -153,7 +153,7 @@ body {
   /* Hero image styling */
 .hero-container {
   width: 100%;
-  max-width: 1000px; /* Lebar maksimal */
+  max-width: 100%; /* Lebar maksimal */
   margin: 0 auto 30px; /* Pusatkan dan beri margin bawah */
   overflow: hidden;
   border-radius: 10px;
