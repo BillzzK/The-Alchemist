@@ -151,38 +151,46 @@ body {
   }
   
   /* Hero image styling */
+.hero-container {
+  width: 100%;
+  max-width: 1000px; /* Lebar maksimal */
+  margin: 0 auto 30px; /* Pusatkan dan beri margin bawah */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16/9; /* Pertahankan rasio 16:9 */
+  border: 2px solid #1a1a1a;
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-container {
+    max-width: 95%; /* Lebih responsif di mobile */
+    border-radius: 5px;
+  }
+  
   .hero-image {
-    width: 1000px;
-    max-height: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 4/3; /* Rasio berbeda untuk mobile */
   }
-  
-  .landscape-image {
-    width: 1000px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border: 2px solid #1a1a1a;
-    transition: transform 0.5s ease;
-  }
-  
-  .landscape-image:hover {
-    transform: scale(1.02);
-  }
-  
-  @media (max-width: 768px) {
-    .hero-image {
-      max-height: 250px;
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 /* Core Mechanism Specific Styles */
 .mechanism-header {
