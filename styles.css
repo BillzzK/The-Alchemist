@@ -152,7 +152,7 @@ body {
   
   /* Hero image styling */
   .hero-image {
-    width: 1200px;
+    width: 1000px;
     max-height: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -161,7 +161,7 @@ body {
   }
   
   .landscape-image {
-    width: 1200px;
+    width: 1000px;
     height: auto;
     object-fit: cover;
     display: block;
